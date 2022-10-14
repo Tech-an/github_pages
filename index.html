@@ -1,1 +1,51 @@
 githubページだよ
+
+<html>
+  <head>
+    <script>
+      class ShoppingList extends React.Component {
+  render() {
+    return (
+      <div className="shopping-list">
+        <h1>Today's lunch menu {this.props.name}</h1>
+       <div><img src="https://drive.google.com/uc?export=view&id=1rrFxfOzoR76-eNQBCMbdQDP0liuBtwBt" alt="" width="800" height="400"border="0"></img><p></p></div>
+       <button className = "a"><img src="https://drive.google.com/uc?export=view&id=1PrvPTmNnkK477I_kRVIFs37sWPTwN5oL" alt="" width="250" height="250"border="0"></img><p>レモンティー</p><p>優しい香り！果実入り</p></button>
+       <button className = "a"><img src="https://drive.google.com/uc?export=view&id=1y08dTjZvuHvIgMHNRZDDP5rmDhd1mLhS" alt="" width="250" height="250"border="0"></img><p>アイスクリーム</p><p>6種類の中から好きな味をお選びください</p></button>
+       <button className = "a"><img src="https://drive.google.com/uc?export=view&id=1HH_9T8HMb--g8ZtkJpSccw4NEihuGoZY" alt="" width="250" height="250"border="0"></img><p>パンケーキ</p><p>中はフワっと！外はカリッと！</p></button>
+　　    <button className = "buttom1"><img src="https://drive.google.com/uc?export=view&id=1IocfpEVLswSn0OiD5vSqwEf3sdgM3WQJ" alt="" width="150" height="150"border="0"></img><p></p></button>
+      </div>
+    );
+  }
+}
+
+class Board extends React.Component {
+  rendername(){
+    return <ShoppingList name={"820円"}/>;  
+  }
+  render() {
+    return (
+        <div className="name">
+          {this.rendername()}
+        </div>
+    );
+  }
+}
+
+
+class Splist extends React.Component {
+  render() {
+    return (
+         <Board />
+    );
+  }
+}
+
+// ========================================
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Splist />);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
